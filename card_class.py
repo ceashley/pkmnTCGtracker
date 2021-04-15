@@ -1,2 +1,2 @@
 def test():
-	print("hellofdsa world")
+	print("hello world")
