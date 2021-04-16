@@ -1,5 +1,6 @@
 from tkinter import *
-
+#type in card name
+#displays imgage of card from url
 
 class main_gui():
 	def addchat(self):
