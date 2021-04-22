@@ -1,3 +1,4 @@
+import urllib.request
 class PokemonCard():
 	def __init__(self, card_set, card):
 		self.card_set = card_set
@@ -18,3 +19,10 @@ class PokemonCard():
 		#card number is the cards number
 		url+=name+'-'+self.card_set+'-'+card_number+'.jpg'
 		return(url)
+
+	
+	def get_image(self):
+		url = self.get_url()		
+		r = urllib.request.urlopen(url)
+		with open("CardImage", 'wb') as f:
+			f.write(r.read())
