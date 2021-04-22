@@ -2,7 +2,7 @@ from tkinter import *
 #type in card name
 #displays imgage of card from url
 
-class main_gui():
+class gui_class():
 	def addchat(self):
 		self.card_input_text = self.nameEntered.get()
 		self.processInput()
@@ -11,8 +11,6 @@ class main_gui():
 	def processInput(self):
 		self.temp = self.card_input_text
 		print(self.temp)
-		
-
 
 	def __init__(self,form):
 		
